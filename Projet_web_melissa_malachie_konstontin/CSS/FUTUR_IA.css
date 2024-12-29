@@ -1,0 +1,595 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis:400,700|Slabo+27px';
+.support {
+  align-items: center;
+  background: tomato;
+  color: #fff;
+  display: flex;
+  font-size: 0.9rem;
+  padding: 0 10px 0 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: 100;
+}
+.support a {
+  color: #fff;
+  padding: 10px 0;
+  text-decoration: none;
+}
+@supports (display: grid) {
+  .support {
+    background: #058a6e;
+    right: 40px;
+    transform: translateX(100%);
+    transition: right 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .support:hover {
+    right: 0;
+    transform: translateX(0%);
+  }
+}
+
+.support svg {
+  fill: #ffffff;
+  height: 30px;
+  margin-right: 5px;
+  padding: 5px;
+  width: 30px;
+}
+
+.unsupported {
+  display: block;
+}
+@supports (display: grid) {
+  .unsupported {
+    display: none;
+  }
+}
+
+.supported {
+  display: none;
+}
+@supports (display: grid) {
+  .supported {
+    display: block;
+  }
+}
+
+.grid {
+  padding: 0 2rem;
+}
+@supports (display: flex) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  @media (min-width: 34em) {
+    .grid {
+      justify-content: space-between;
+    }
+  }
+}
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  @media (min-width: 34em) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1fr;
+    }
+  }
+  @media (min-width: 60em) {
+    .grid {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  }
+}
+
+article {
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+@media (min-width: 34em) {
+  article {
+    float: left;
+    margin: 1rem;
+    max-width: 41%;
+  }
+  article:nth-child(2n+1) {
+    clear: left;
+  }
+  @supports (display: grid) {
+    article {
+      max-width: none;
+    }
+  }
+}
+@media (min-width: 60em) {
+  article {
+    max-width: 20%;
+  }
+  @supports (display: grid) {
+    article {
+      max-width: none;
+    }
+  }
+  article:nth-child(2n+1) {
+    clear: none;
+  }
+  article:nth-child(3n+2) {
+    max-width: 45%;
+  }
+  @supports (display: grid) {
+    article:nth-child(3n+2) {
+      max-width: none;
+    }
+  }
+  article:nth-child(3n+1) {
+    clear: left;
+  }
+}
+@supports (display: flex) {
+  article {
+    flex-basis: 100%;
+  }
+  @media (min-width: 34em) {
+    article {
+      flex: 0 1 40%;
+    }
+  }
+  @media (min-width: 60em) {
+    article {
+      flex: 0 1 calc(100% * 0.25 - 1rem);
+    }
+    article:nth-child(3n+2) {
+      flex: 1 0 calc(100% * 0.25 - 1rem);
+    }
+  }
+}
+
+body {
+  background: #e3e3e3;
+  font-family: "Dosis", serif;
+}
+
+.page-title {
+  color: #556270;
+  font-family: "Slabo 27px", serif;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  padding: 0.5rem 0 0;
+  text-align: center;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.intro {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.entry-title {
+  color: #4b4b4b;
+  font-family: "Slabo 27px", serif;
+  font-size: 1.75rem;
+}
+@media (min-width: 60em) {
+  article:nth-of-type(3n+2) .entry-title {
+    font-size: 2.5rem;
+  }
+}
+
+a {
+  color: #C44D58;
+  font-family: "Dosis", serif;
+  font-weight: 700;
+}
+
+img {
+  height: auto;
+  width: 100%;
+
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Style de la vidéo en arrière-plan */
+.video_pc{
+    width: 100vw; /* Largeur égale à la largeur de la fenêtre */
+    height: 100vh; /* Hauteur égale à la hauteur de la fenêtre */
+    object-fit: cover; 
+}
+.videotitle{
+    color: black;
+    position: absolute; /* Positionnement absolu */
+    top: 50%; /* Centrage vertical */
+    left: 50%; /* Centrage horizontal */
+    transform: translate(-50%, 51%); /* Centrage précis */
+    z-index: 1; /* Assure que le titre est au-dessus de la vidéo */
+    color: white; /* Couleur du texte */
+    font-size: 3em; /* Taille de police */
+    text-align: center; /* Centrage du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteneur pour le reste du contenu */
+.content-container {
+    margin-top: 100vh; /* Assure que le contenu commence sous la vidéo */
+    padding: 20px; /* Ajoute de l'espace pour éviter que le contenu ne soit collé au haut de la page */
+}
+/* header */
+header{
+    background-color: #ffffff70;
+    color:rgb(0, 0, 0);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+   
+  }
+  /* NAVIAGATION BAR  */
+  nav{
+    position: sticky;
+    top: 0;
+ 
+    align-items: center;
+    background-color: #ffffff70;
+    padding: 0.5rem;
+    z-index: 2;
+  
+  }
+  nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly; 
+    color: rgb(255, 255, 255);
+ 
+  }
+  nav ul li{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+
+
+  }
+  nav form{
+    margin:0
+  }
+  /* integration dropdown - debut   */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+  right: -57px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;
+  /* top: 40px; */
+ 
+}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* integrztion dropdown - fin */
+  /* Search input */
+  input[type="search"]{
+    padding:5px;
+    border-radius: 5px;
+    border:none;
+  
+  }
+  a{
+    color: #010101;
+    font-size: x-large;
+    text-decoration: initial;
+  }
+  /* Main content layout  */
+  .container{
+    display: grid; /*active flexbox pour le layout principal*/
+  
+    flex-wrap: wrap; /*permet au élement flex de passer à la ligne suivante */
+  
+    gap:20px;   /*Espacement entre les éléments flex*/
+  
+  
+  }
+  .main-column{
+     /* Pour permettre 
+      à la colonne  principale de prendre 3  fois  d'espace que les 
+      éléments flex 
+      
+      */
+      flex:1;
+      
+  }
+  .imageclass{
+    width: 550px; 
+    height: 225px;
+    object-fit: cover;
+    
+  }
+  
+
+  /* Mise en forme des card  */
+
+      .card2{
+
+        margin-bottom:20px;
+        border-radius:45px;
+        box-shadow: rgb(196 1 224) 8px 6px 8px;
+        flex: 1;
+        max-width: calc(80%);
+        margin: auto;
+        
+        margin-top: 50px;
+        display: flex;
+        flex-direction:column;
+        
+      }
+     
+      .card{
+        padding:15px;
+            margin-bottom:20px;
+            border-radius:140px;
+            box-shadow: rgb(196 1 224) 8px 5px 8px;
+            flex: 1;
+            max-width: calc(50%);
+            margin-top: 100px;
+          }
+          .card1{
+            margin-bottom:20px;
+            border-radius:47px;
+            box-shadow: rgb(196 1 224) 8px 5px 8px;
+            flex: 1;
+            max-width: calc(50%);
+            margin: auto;
+            margin-top: 100px;
+          }
+
+  h1{
+    color: #030303;
+    text-align: center;
+
+   
+  }
+  p{
+    /* color: #000000; */
+    
+    
+  }
+  .soustitre{
+    color: #000000;
+    font-size: large;
+text-transform: capitalize;
+text-align: center;
+
+
+
+  }
+  /*  image  */
+
+  .image{
+    text-align: center;
+    animation: slit-in-vertical 0.45s ease-out both;
+    
+    }
+  
+  /* footer */
+  footer{
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    background-color: #ffffff70;
+    padding: 20px;
+    
+  }
+
+  /* footer
+{
+    text-align: center;
+    border-top: 0.5px solid #f3f3f3;
+    padding-top: 10px;
+}
+
+.contact-footer 
+{
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+}
+
+footer a:hover
+{
+    opacity: 0.75;
+} */
+  /* responsive de élements */
+  @media(max-width:798px){
+    nav{
+       flex-direction: column;  /*La navigation s'affiche verticalement */
+    }
+    nav ul{
+      text-align: center;
+    }
+    nav ul li{
+      display: block;
+      margin: 5px 0;
+    }
+  .container{
+    flex-direction: column;
+  }
+  .main-column,.sidebar{
+    width: 100%;
+  }
+  }
+  .slit-in-vertical {
+    -webkit-animation: slit-in-vertical 0.45s ease-out both;
+            animation: slit-in-vertical 0.45s ease-out both;
+  }
+  /* ----------------------------------------------
+ * Generated by Animista on 2024-4-10 10:54:54
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slit-in-vertical
+ * ----------------------------------------
+ */
+@-webkit-keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+@keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+.tracking-in-contract-bck {
+	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-4-12 15:34:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract-bck
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+/* footer */
+
+footer
+{
+    text-align: center;
+    border-top: 0.5px solid #f3f3f3;
+    padding-top: 10px;
+    background-color: #23252f;
+    color: white;
+}
+
+.contact-footer 
+{
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+}
+
+footer a:hover
+{
+    opacity: 0.75;
+}
+
+.icon-style
+{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 24px;
+    /* border: 2px solid black ; */
+    /* background-color: wheat; */
+}
+
+.fa-brands:hover
+{
+  opacity: 0.75;
+
+}
+
+
+  
+

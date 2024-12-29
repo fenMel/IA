@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Intelligence Artificielle</title>
+    <link rel="stylesheet" href="/CSS/style_melissa.css">
+    <link rel="stylesheet" href="http://animista.net">
+    <script src="https://kit.fontawesome.com/b142587a1e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Rajdhani:wght@300;400;500;600;700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  @media  screen and (max-width: 768px)
+  {
+    nav ul
+    {
+      display: flex;
+      text-transform: uppercase;
+      list-style-type: none;
+      color: white;
+      padding: 10px;
+      justify-content: space-around;
+      gap: 0px;
+    }
+    #definition
+    {
+      display: none;
+    }
+    #fondamentaux
+    {
+      display: none;
+    }
+    .flex_item
+    {
+      background-color: white;
+    /* width: calc(33.33% - 20px); */
+    width: 100%;
+    /* margin: 0 10px; */
+    margin: 10px;
+    height: auto;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    /* padding: 20px; */
+    /* box-sizing: border-box; */
+
+    }
+    .h2_fondamentaux{
+      display: none;
+    }
+
+    .flex_item img 
+    {
+      width: 100%;
+    }
+
+    #histoire h2
+    {
+      font-size: 40px;
+    }
+
+  
+  }
+
+</style>
+
+<body class="background-image" >
+
+  <header>
+    <h1 class="focus-in-contract ">L'intelligence Artificielle</h1>
+</header>
+    
+        <!-- <nav>
+            <ul>
+                <li class="menu-item"><a href="index.html" class="active" id="accueil">Accueil</a>
+                    <ul class="sub-menu">
+                        <li><a href="application_finale.html">Définition</a></li>
+                        <li><a href="#histoire">Histoire</a></li>
+                        <li><a href="#fondamentaux">Fondamentaux</a></li>
+                        <li><a href="#enjeux">Enjeux</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="menu-item">About</a>
+                  <ul class="sub-menu">
+                    <li><a href="application_finale.html">Domaine d'application</a></li>
+                    <li ><a href="FUTUR_IA.html">Futur et Perspectives de l'IA </a></li>
+                    <li ><a href="ethique.html">Éthique et Responsabilité </a></li>
+                    <li ><a href="ressources.html">Ressources et Liens Utiles</a></li>
+                    <li ><a href="emploi.html">IA et emploi</a></li>
+
+                </ul>
+                 
+               
+                 
+                </li>
+                <li><a href="formulaire_contacte.html">contact</a></li>
+
+
+            </ul>
+        </nav> -->
+
+        <nav>
+          <ul>
+              <li><a href="index.html">Acceuil</a></li>
+              <li><div class="dropdown">
+                  <a href="#">About</a>
+                  <div class="dropdown-content">
+                    <a href="application_finale.html">Domaine d'application</a>
+                    <a href="FUTUR_IA.html">Futur et perspective de l'IA</a>
+                    <a href="ethique.html">Éthique et Responsabilité</a>
+                    <a href="ressources.html">Ressources et Liens Utiles</a>
+                    <a href="emploi.html">IA et emploi</a>
+                  </div>
+                </div></li> 
+                <li><a href="formulaire_contacte.html">contact</a></li>
+              </ul>
+      </nav>
+    
+    
+        <aside>
+          <div class="video-container">
+            <video autoplay muted loop class="video-matrix">
+                <source src="image_m/matrix.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-overlay">
+              <h1>L'intelligence Artificielle </h1>
+             <p>ACCEUIL</p>
+          </div>
+           </div>
+        </aside>
+    
+    <main>
+         
+        <div id="definition"  >
+    
+            <p class="diff">L'intelligence artificielle est un domaine de l'informatique qui vise à créer des systèmes informatiques capables d'exécuter des tâches qui nécessitent normalement l'intelligence humaine. Ces tâches comprennent la reconnaissance de formes, l'apprentissage, la planification, le raisonnement, la prise de décision, la résolution de problèmes, la perception,
+                 le traitement du langage naturel et la compréhension de l'environnement."
+                L'IA comprend un large éventail de techniques et de méthodes, y compris l'apprentissage automatique, les réseaux neuronaux artificiels, l'apprentissage profond, les algorithmes évolutifs, la logique floue, et bien d'autres. Ces techniques permettent aux machines de traiter des données, d'apprendre à partir de ces données et de prendre des décisions en conséquence, souvent de manière autonome. L'objectif final de l'IA est de créer des systèmes
+                 intelligents capables de résoudre des problèmes complexes de manière similaire à un être humain, voire plus efficacement.</p>
+            </div>
+
+
+        <div id="histoire" class="flex"  >
+            <h2  class="animate__zoomInDown">Histoire de l'IA </h2>
+
+           <div class="flex_item">
+              <img src="image_m/Intelligence-Artificielle-Alan-Turing.jpg" alt="">
+                <p>
+              L'histoire de l'intelligence artificielle (IA) remonte aux années 1950, avec les premières tentatives de simuler l'intelligence humaine. En 1950, Alan Turing a publié son célèbre article "Calculating Machinery and Intelligence", dans lequel il a proposé le "Test de Turing" comme moyen d'évaluer l'intelligence d'une machine. Cette période a également vu l'émergence d'autres pionniers de l'IA tels que Marvin Minsky et John McCarthy.
+              </p>
+           </div>
+
+          <article class="flex_item" class="preview-image">
+            <img src="image_m/tete_ia.jpg" alt="">
+            <p> 1956 et 1974, l'IA a connu ce qu'on pourrait appeler son âge d'or. 
+            La conférence de Dartmouth College en 1956 marque le début officiel de la recherche en IA. C'est à cette époque que de nombreux concepts et techniques fondamentaux ont été développés, tels que les premiers programmes de jeu d'échecs et les premiers systèmes de vision par ordinateur. En 1966, le projet de traduction automatique de l'armée américaine a conduit au développement de systèmes de traitement du langage naturel.
+            
+            Cependant, à la fin des années 1970, l'IA a traversé une période difficile, souvent appelée le "hiver de l'IA".
+             Les progrès étaient lents, et de nombreux chercheurs se sont détournés du domaine en raison de résultats insatisfaisants par rapport aux attentes initiales.
+            </p>
+          </article>
+
+            <article class="flex_item" class="preview-image" >
+              <img src="image_m/homme_doit.jpg" alt="">
+            <p>La renaissance de l'IA a eu lieu dans les années 1980 et continue jusqu'à nos jours.
+             Les nouveaux développements en informatique et en algorithmes ont redonné un nouvel élan à l'IA. 
+             L'avènement de l'informatique distribuée et l'essor de l'apprentissage a
+             utomatique ont ouvert de nouvelles perspectives. Depuis lors, l'IA a connu une croissance exponentielle, avec des avancées majeures dans des domaines tels que la reconnaissance d'images, le traitement du langage naturel, la robotique et bien d'autres.
+            </p>
+          </article>
+
+        </div>
+        <!-- <div>
+          <h2 class="h2_fondamentaux">Fondamentaux</h2>
+        </div> -->
+       
+        <h2 class="h2_fondamentaux">Fondamentaux</h2>
+        
+        <div id="fondamentaux">
+              
+          <video type="video/mp4" src="image_m/coeur.mp4" autoplay muted loop ></video>
+           
+           
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <!-- Contenu du premier slide -->
+                      <article class="fondamentaux_box">
+                        <h2>1. Apprentissage automatique (Machine Learning)</h2>
+                        <p>L'apprentissage automatique est une branche de l'IA qui permet aux machines d'apprendre à partir de données sans être explicitement programmées. Il repose sur des algorithmes qui identifient des modèles dans les données et ajustent leurs paramètres pour améliorer les prédictions ou les performances.</p>
+                      </article>
+                      <!-- Fin du contenu du premier slide -->
+                      <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                      <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <!-- Contenu du deuxième slide -->
+                      <article class="fondamentaux_box">
+                        <h2>2. Réseaux de neurones artificiels</h2>
+                        <p>Les réseaux de neurones artificiels sont des modèles informatiques composés de neurones interconnectés qui transmettent des signaux les uns aux autres. Ils sont largement utilisés dans les tâches d'apprentissage automatique, en particulier dans le domaine de la vision par ordinateur et du traitement du langage naturel.</p>
+                      </article>
+                      <!-- Fin du contenu du deuxième slide -->
+                      <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                      <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <!-- Contenu du troisième slide -->
+                      <article class="fondamentaux_box">
+                        <h2>3. Logique floue (Fuzzy Logic)</h2>
+                        <p>Contrairement à la logique classique binaire (vrai/faux), la logique floue permet de représenter et de traiter des concepts vagues ou imprécis en utilisant des degrés de vérité. Elle est couramment utilisée dans les systèmes de contrôle et de prise de décision où les données peuvent être ambiguës.</p>
+                      </article>
+                      <!-- Fin du contenu du troisième slide -->
+                      <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                      <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <!-- Contenu du quatrième slide -->
+                      <article class="fondamentaux_box">
+                        <h2>4. Traitement du langage naturel (Natural Language Processing)</h2>
+                        <p>Le traitement du langage naturel est une branche de l'IA qui se concentre sur la compréhension et la manipulation du langage humain par les ordinateurs. Il est utilisé dans des applications telles que la traduction automatique, la génération de texte et les chatbots.</p>
+                      </article>
+                      <!-- Fin du contenu du quatrième slide -->
+                      <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                      <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                    </div>
+                  </li>
+                </ol>
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                  </ol>
+                </aside>
+              </section>
+              <video src="image_m/IA (2).mp4" autoplay   muted loop ></video>
+            </div>
+       
+
+
+
+    </main>
+    <!-- lien vers autres page  -->
+    <aside>
+   
+      <h3 class="heartbeat">
+       Découvrez nos autres pages ! 
+      </h3>
+   
+      <div id="card-area">
+       <div class="wrapper">
+           <div class="box-area">
+
+            <div class="box">
+              <a href="FUTUR_IA.html"><img src="/Image_video1/futur.jpg" alt="3"></a>
+          <div class="overlay">
+              <h4>Futur de l'IA</h4>
+              <p>Comment l'IA va-t-elle impacter <br>notre futur ?</p>
+              <!-- <a href= "#" target="_blank">En savoir plus</a> -->
+
+          </div>
+
+
+      </div>
+
+               <div class="box">
+                   <a href="application_finale.html"><img src="/Image_video1/python.jpg" alt="1"></a>
+                   <div class="overlay">
+                     
+                       <h4>Domaine et cas d'utilisation</h4>
+                       <p>L'IA dans notre qutidien</p>
+                       <!-- <a href="#" target="_blank">En savoir plus</a> -->
+                   </div>
+               </div>
+   
+               <div class="box">
+                   <a href="ethique.html"><img src="/Image_video1/casquevr.jpg" alt="2"></a>
+                   <div class="overlay">
+                       <h4>Ethique et Responsabilité</h4>
+                       <p>L'IA soulève un certain nombre de question éthique</p>
+                       <!-- <a href="#" target="_blank">En savoir plus</a> -->
+                   </div>
+               </div>
+   
+              
+           </div>
+       </div>
+   </div>
+      
+      </aside>
+         <!-- footer  -->
+   
+         <footer id="footer">
+          <a href="formulaire_contacte.html" class="contact-footer">Contact</a>
+            <p>Copyright - Tout droits reservé </p>
+            <div class="icon-style">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-bounce" style="color: #ffffff;"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok fa-bounce" style="color: #ffffff;"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-x-twitter fa-bounce" style="color: #ffffff;"></i></a>
+            </div>
+        </footer>
+</body>
+
+
+<!-- <script>
+    //  JavaScript
+
+document.addEventListener("DOMContentLoaded", function() {
+    var accueilLink = document.getElementById("accueil");
+    var tooltipContent = `
+        <a href="#sommaire">Sommaire</a><br>
+        <a href="#definition">Définition</a><br>
+        <a href="#histoire">Histoire</a><br>
+        <a href="#fondamentaux">Fondamentaux</a><br>
+        <a href="#enjeux">Enjeux</a>
+    `;
+    accueilLink.innerHTML += `<span class="tooltiptext">${tooltipContent}</span>`;
+});
+
+</script> -->
+
+</html> 

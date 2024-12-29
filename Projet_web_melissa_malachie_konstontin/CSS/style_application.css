@@ -1,0 +1,632 @@
+*
+{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    /* background-color: #222; */
+    background-color: #23252f;
+}
+
+body
+{
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+}
+
+ nav{
+   
+   
+    background-color: #23252f;
+    border-bottom: 1px solid #f3f3f3;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    opacity: 0.90;
+     /* test */
+     display: flow-root;
+     /* test */
+    
+ }
+ nav ul { 
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: white;
+    padding: 0;
+   
+
+    
+ }
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav ul li a:hover
+{
+    color: blue;
+    transition:  0.4s ease-in-out;
+
+    
+}
+
+/* integration dropdown - debut   */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    right: -57px;
+}
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;
+    /* top: 40px; */
+   
+}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* integrztion dropdown - fin */
+h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+
+   
+}
+
+h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+/* style main */
+
+main
+{
+    padding: 20px;
+    background-color: #f3f3f3;
+    color: #333;
+    box-sizing: border-box; /*evite le debordement */
+    /* test margin */
+    margin-top: -6px; 
+}
+.container{
+    display: flex; 
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 20px; 
+    /* espacement entre les flex  */
+
+    
+
+
+}
+
+.main-column{
+    /* Pour permettre à la colonne principale de prendre 3
+    plus d'espace que les éléments flex 
+    */
+    flex: 3;
+}
+.sidebar
+{
+    /* La barre laltéral prend l'espace restant (moins que la colonne */
+    flex: 1;
+    padding: 20px;
+    /* background-color: rgba(251, 161, 128); */
+    background-color: #23252f;
+    color: white;
+    height: 100%;
+    border-radius: 8px;
+
+}
+
+.card p {
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+/* image  */
+.image{
+    /* background-color: rgb(194, 151,194); */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    /* text-align: center; */
+    color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+    /* background-color: #23252f; */
+    align-self: center;
+    width: 50%;
+
+}
+
+.item1{
+    order: 2;
+    font-size: 15px;
+}
+.item2{
+    order: 1;
+}
+.item3{
+    order: 3;
+    border-top: 1px solid grey;
+    padding-top: 15px;
+}
+
+.lettre-style
+{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.image-card
+{
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.about, .post , .follow-me 
+    {
+        text-transform: capitalize;
+        margin-top: 20px;
+        text-align: center;
+    
+    
+    } 
+    
+    .icon-style
+    {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        font-size: 24px;
+        /* border: 2px solid black ; */
+        /* background-color: wheat; */
+    }
+
+    .fa-brands:hover
+    {
+      opacity: 0.75;
+
+    }
+        
+    .card
+    {
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        /* border-radius: 8px; */
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        display: flex;
+        flex-direction: column;
+    }
+  
+/* style main */
+/* Intégration du carrousel */
+.slider-1{
+    max-width: 600px;
+    margin: 100px auto;
+   overflow: hidden;
+   border: 2px solid #F1F1F1;
+  
+
+}
+
+.slider-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+   }
+
+   .slider-1 .slider{
+    display: flex;
+    animation: slider-1 12s infinite ease-in-out;
+   
+}
+
+.slider-1 p {
+   
+    flex-shrink: 0;
+    width: 100%;
+    margin: 0;
+   
+}
+
+@keyframes slider-1 {
+
+    0%,
+    20%{
+        transform: translateX(0);
+    }
+    25%,
+    45%{
+        transform:translateX(-100%) ;
+    }
+    50%,
+    70%{
+        transform: translateX(-200%);
+    }
+    75%,
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+/* Intégrationi du carrousel */
+/* animation heartbeat */
+.heartbeat{
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+    text-align: center;
+}
+
+
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+/* animation heratbeat */
+/* animation titre de page */
+.focus-in-contract {
+	-webkit-animation: focus-in-contract 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-4-9 16:30:22
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation focus-in-contract
+ * ----------------------------------------
+ */
+ @-webkit-keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+/* animation titre de page */
+
+/* integration des lien vers autres page (stage) */
+.slide-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider-2
+{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    scroll-snap-type:mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider-2 img 
+{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    /*object-fit: cover;*/
+    object-fit: initial;
+    width: 100%;
+   
+}
+
+.slide-nav
+{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+   
+    z-index: 1;
+
+}
+
+.slide-nav a 
+{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+
+}
+
+.slide-nav a :hover
+{
+    opacity: 1;
+}
+
+article
+{
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+
+.wrapper
+{
+ padding: 10px 10%;
+}
+
+#card-area
+{
+    padding: 50px 0;
+}
+
+.box-area
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   grid-gap: 40px;
+   margin-top: 50px;
+
+
+
+}
+
+.box
+{
+   
+   
+    border-radius:10px ;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.box img
+{
+    width: 100%;
+    border-radius: 13px;
+    display: block;
+    transition: transform 0.5s;
+  
+}
+
+.overlay
+{
+    /* height: 0; */
+    width: 100%;
+    background: linear-gradient(transparent , #1c1c1c 80%) ;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0 40px; */
+    text-align: center;
+    font-size: 14px;    
+    /* transition: height 0.5s; */
+    color: #F1F1F1;
+    
+    
+}
+
+/* test */
+.overlay h4
+{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+/* test */ 
+
+.overlay a:hover
+{
+    background-color: #0e2e5b;
+    transition: ease-in-out 0.5s;
+}
+
+/* overlay test  */
+
+
+.box:hover .overlay h4, .box:hover .overlay p 
+{
+        display: none;   
+
+}
+
+
+.test_lien:hover
+{
+    
+    background-color: #0e2e5b;
+    transition: ease-in-out 0.5s;
+}
+
+/* overlay test  */
+/* intégration des lien vers les autres pages (stage) */
+
+
+footer
+{
+    text-align: center;
+    border-top: 0.5px solid #f3f3f3;
+    padding-top: 10px;
+   
+
+}
+
+.contact-footer 
+{
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+}
+
+footer a:hover
+{
+    opacity: 0.75;
+}
+
+/* responsive */
+@media  screen and (max-width: 768px)
+{
+ .card p
+ {
+    font-size: 15px;
+    letter-spacing: 1px;
+ }
+ 
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+}
+
+
+nav ul  {
+    display: flex;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: white;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+}
